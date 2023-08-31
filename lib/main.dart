@@ -9,10 +9,15 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const modArg =
+        String.fromEnvironment('MODE', defaultValue: 'MODE NOT DEFINED');
+    const supabaseKeyArg = String.fromEnvironment('SUPABASEKEY',
+        defaultValue: 'SUPABASEKEY NOT DEFINED');
+    print('MODE: $modArg' '\nSUPABASEKEY: $supabaseKeyArg');
     return const MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Text('Hello World!'),
+          child: Text('Hello World! You are in $modArg mode'),
         ),
       ),
     );
