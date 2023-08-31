@@ -13,11 +13,11 @@ class MainApp extends StatelessWidget {
         String.fromEnvironment('MODE', defaultValue: 'MODE NOT DEFINED');
     const supabaseKeyArg = String.fromEnvironment('SUPABASEKEY',
         defaultValue: 'SUPABASEKEY NOT DEFINED');
-    print('MODE: $modArg' '\nSUPABASEKEY: $supabaseKeyArg');
+    debugPrint('MODE: $modArg' '\nSUPABASEKEY: $supabaseKeyArg');
     return const MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Text('Hello World! You are in $modArg mode'),
+          child: Text('Hello Visitor! You are in $modArg mode'),
         ),
       ),
     );

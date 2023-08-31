@@ -1,6 +1,5 @@
 # Custom ignore list
 .env
-.vscode
 pubspec.lock
 android/
 ios/
