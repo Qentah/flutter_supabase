@@ -1,5 +1,5 @@
 # Custom ignore list
-.env
+.env*
 pubspec.lock
 android/
 ios/

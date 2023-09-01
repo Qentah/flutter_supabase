@@ -14,7 +14,8 @@
             "args": [
                 "--web-renderer",
                 "canvaskit",
-                "--dart-define=MODE=DEV"
+                "--dart-define-from-file",
+                ".env.json"
             ]
         },
     ]
