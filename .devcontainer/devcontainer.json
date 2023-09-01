@@ -6,7 +6,7 @@
 	"image": "mcr.microsoft.com/devcontainers/base:jammy",
 	"features": {
 		"ghcr.io/jarrodcolburn/features/flutter-sdk:0": {}
-	}
+	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -15,7 +15,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "sudo chown --recursive \"$USER:$USER\" \"$FLUTTER_HOME\""
+	"postCreateCommand": "sudo chown --recursive \"$USER:$USER\" \"$FLUTTER_HOME\""
 
 	// Configure tool-specific properties.
 	// "customizations": {},
